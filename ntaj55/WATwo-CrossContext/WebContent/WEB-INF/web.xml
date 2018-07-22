@@ -1,0 +1,11 @@
+<web-app>
+  <display-name>WATwo-CrossContext</display-name>
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>com.nt.servlet.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>second</servlet-name>
+    <url-pattern>/surl</url-pattern>
+  </servlet-mapping>
+</web-app>

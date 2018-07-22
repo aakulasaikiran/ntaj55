@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+
+    <context-param>
+      <param-name>driver</param-name>
+      <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+      <param-name>url</param-name>
+      <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+    </context-param>
+    <context-param>
+      <param-name>dbuser</param-name>
+      <param-value>system</param-value>
+    </context-param>
+          <context-param>
+      <param-name>dbpwd</param-name>
+      <param-value>manager1</param-value>
+    </context-param>
+    <context-param>
+      <param-name>dbpwd</param-name>
+      <param-value>manager</param-value>
+    </context-param>
+ 
+  <servlet>
+    <servlet-name>db</servlet-name>
+    <servlet-class>com.nt.servlet.DBServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>db</servlet-name>
+    <url-pattern>/dburl</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.nt.servlet.TestServlet</servlet-class>
+  
+    <init-param>
+     <param-name>p1</param-name>
+     <param-value>val2</param-value>
+    </init-param>
+      <init-param>
+     <param-name>p1</param-name>
+     <param-value>val1</param-value>
+    </init-param>
+    
+    
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/testurl</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>input.html</welcome-file>
+  </welcome-file-list>
+</web-app>

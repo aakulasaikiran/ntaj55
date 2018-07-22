@@ -1,0 +1,11 @@
+
+<orders>
+ <order>
+    <item>table</item>
+    <price>1000</price>
+ </order>
+ <order>
+     <item>chair</item>
+     <price>300</price>
+ </order>
+</orders>

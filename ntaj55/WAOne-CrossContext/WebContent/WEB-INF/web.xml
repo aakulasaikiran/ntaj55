@@ -1,0 +1,15 @@
+
+<web-app>
+  <display-name>WAOne-CrossContext</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>com.nt.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>first</servlet-name>
+     <url-pattern>/furl</url-pattern>
+  </servlet-mapping>
+</web-app>

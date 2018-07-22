@@ -1,0 +1,13 @@
+<web-app>
+   <servlet>
+      <servlet-name>form</servlet-name>
+	   <servlet-class>com.nt.servlet.FormServlet</servlet-class>
+  </servlet>
+     <servlet-mapping>
+	       <servlet-name>form</servlet-name>
+		   <url-pattern>/formurl</url-pattern>
+    </servlet-mapping>
+	<welcome-file-list>
+	   <welcome-file>form.html</welcome-file>
+	</welcome-file-list> 
+</web-app>

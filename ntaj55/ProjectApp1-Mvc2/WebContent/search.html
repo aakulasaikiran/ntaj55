@@ -1,0 +1,46 @@
+<script language="JavaScript">
+  function isExcel(){
+     form.source.value="excel"; //sets "excel" to hiddenbox
+     validate();
+  }
+  function isHtml(){
+     form.source.value="html";
+     validate();
+  }
+  function validate(){
+    if(form.category.selectedIndex==0){
+      alert("Please book category!!");
+      return false;
+    }
+    else{
+      form.submit();
+     return true;
+    }
+       
+  }
+
+</script>
+
+<h1 style="color: red; text-align: center">
+	<u>Search for Books</u>
+</h1>
+
+<form name="form" action="controller" method="post">
+	<table>
+		<tr>
+			<td>Select Book category</td>
+			<td><select name="category" >
+					<option value="" selected>---Slect a item---</option>
+					<option value='java'>Java Pkg</option>
+					<option value='.net'>.Net Pkg</option>
+					<option value='oracle'>Oracle Pkg</option>
+					<option value='js'>Java Script Pkg</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="ExcelOutput"  onClick="isExcel()"></td>
+			<td><input type="button" value="HtmlOutput" onClick="isHtml()"></td>
+		</tr>
+	</table>
+	  <input type="hidden" name="source"/>
+</form>

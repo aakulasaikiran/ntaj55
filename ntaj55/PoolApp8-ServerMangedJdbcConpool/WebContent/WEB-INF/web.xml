@@ -1,0 +1,10 @@
+<web-app >
+  <servlet>
+    <servlet-name>pool</servlet-name>
+    <servlet-class>com.nt.servlet.ConnPoolServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pool</servlet-name>
+    <url-pattern>/poolurl</url-pattern>
+   </servlet-mapping>
+</web-app>

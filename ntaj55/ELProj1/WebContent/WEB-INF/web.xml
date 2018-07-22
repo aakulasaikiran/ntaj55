@@ -1,0 +1,12 @@
+<web-app>
+ <context-param>
+   <param-name>dbuser </param-name>
+   <param-value>system</param-value>
+ </context-param>
+ <context-param>
+   <param-name>dbpwd </param-name>
+   <param-value>tiger</param-value>
+ </context-param>
+ 
+
+</web-app>
